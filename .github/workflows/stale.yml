@@ -40,7 +40,7 @@ jobs:
         exempt-issue-labels: 'WIP'
         exempt-pr-labels: 'WIP'
         # Remove stale labels from issues when they are updated or commented on.
-        #remove-stale-when-updated: true
+        remove-stale-when-updated: true
 
 
 
