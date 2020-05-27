@@ -29,8 +29,8 @@ jobs:
         stale-pr-message: >
           This PR has been marked as STALE due to inactivity for **1** days. 
           It will be closed in **1** days unless the flag is cleared.
-        stale-issue-label: 'Stale'
-        stale-pr-label: 'Stale'
+        stale-issue-label: 'STALE'
+        stale-pr-label: 'STALE'
         exempt-issue-labels: 'WIP'
         exempt-pr-labels: 'WIP'
         remove-stale-when-updated: true
