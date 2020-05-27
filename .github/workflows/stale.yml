@@ -14,7 +14,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/stale@v3.0.3
+    - uses: actions/stale@v3.0.4
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         # Number of days of inactivity before marking an issue or PR stale
