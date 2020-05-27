@@ -17,29 +17,22 @@ jobs:
     - uses: actions/stale@v3.0.4
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        # Number of days of inactivity before marking an issue or PR stale
         days-before-stale: 1
-        # Number of days of inactivity after marking stale before closing the issue or PR
         days-before-close: 1
-        # Message for marking issues and PR's.
         stale-issue-message: >
           This issue has been marked as STALE due to inactivity for **1** days. 
           It will be closed in **1** days unless the flag is cleared.
           
           Please post a comment and remove the STALE flag to prevent auto-closure
           of this issue.
-        #description: 'The maximum number of operations per run, used to control rate limiting.
         operations-per-run: 25
         stale-pr-message: >
           This PR has been marked as STALE due to inactivity for **1** days. 
           It will be closed in **1** days unless the flag is cleared.
-        # 'STALE' label to use.
         stale-issue-label: 'Stale'
         stale-pr-label: 'Stale'
-        # Flags that exempt issues and PRs from this check.
         exempt-issue-labels: 'WIP'
         exempt-pr-labels: 'WIP'
-        # Remove stale labels from issues when they are updated or commented on.
         remove-stale-when-updated: true
 
 
