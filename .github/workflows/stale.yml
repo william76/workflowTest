@@ -16,7 +16,8 @@ jobs:
     steps:
     - uses: actions/stale@v3.0.4
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        #repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.TEST_SECRET }}
         days-before-stale: 1
         days-before-close: 1
         stale-issue-message: >
