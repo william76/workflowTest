@@ -17,7 +17,8 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/stale@v3.0.4
+    #- uses: actions/stale@3.0.4             # <<< the original
+    - uses: william76/stale@v3.0.4
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         days-before-stale: 1
