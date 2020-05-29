@@ -1,3 +1,7 @@
+#
+# This workflow will process issues and PR's to determine if they are stale and/or need to be
+# removed.
+#
 name: "Close stale issues"
 on:
   # For debugging: toggle action by starring/unstarring the repo
