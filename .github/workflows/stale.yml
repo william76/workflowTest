@@ -6,9 +6,9 @@ on:
   # Regular scheduling, run daily at 6AM Mountain time (12:00pm UTC)
   # Cron strings: MIN HR DOM MON DOW
   schedule:
-  - cron: "*/6 * * * *"
-
-#- cron: "0 12 * * *"
+  - cron: "0 12,19 * * *"
+#  - cron: "*/6 * * * *"
+#  - cron: "0 12 * * *"
 
 # See https://github.com/actions/stale/blob/master/action.yml for information on actions 
 # that GitHub knows for stale issues.
