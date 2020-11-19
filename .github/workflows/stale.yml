@@ -40,18 +40,29 @@ jobs:
         remove-stale-when-updated: true
         operations-per-run: 3
         stale-issue-message: >
-          This issue has been marked as STALE due to inactivity for **1** days.
-          It will be closed in **1** days unless the flag is cleared.
+          This issue has had no activity for **1** days and is marked for
+          closure. It will be closed after an additional **1** days of inactivity.
 
-          Please post a comment and remove the STALE flag to prevent auto-closure
-          of this issue.
+          If you would like to keep this issue open please add a comment and remove
+          the `MARKED_FOR_CLOSURE` label.
+
+          If this issue should be kept open even with no activity beyond the time
+          limits you can add the label `DO_NOT_AUTOCLOSE`.
+
         close-issue-message: >
-          This issue has been CLOSED due to inactivity for **2** days.
+          This issue was closed due to inactivity for **2** days.
+
         stale-pr-message: >
-          This PR has been marked as STALE due to inactivity for **1** days.
-          It will be closed in **1** days unless the flag is cleared.
+          Because of the changing nature of the Trilinos source due to active
+          development, a pull request with _no_ activity for **1** days is
+          considered to be abandoned and will be automatically closed after **1**
+          additional days of inactivity from when it was marked inactive.
+
+          If this should be kept open, please post a comment and remove the
+          label `MARKED_FOR_CLOSURE` to reset the inactivity timer.
+
         close-pr-message: >
-          This PR has been CLOSED due to inactivity for **2** days.
+          This Pull Request has been automatically closed due to **1** days of inactivity.
 
 
 
