@@ -28,7 +28,7 @@ jobs:
     steps:
     - uses: actions/stale@v3.0.13
       with:
-        debug-only: false
+        debug-only: true
         ascending: true
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         days-before-stale: 1
