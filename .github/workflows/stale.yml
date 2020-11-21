@@ -27,9 +27,9 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/stale@v3.0.13
+    - uses: actions/stale@v3.0.14
       with:
-        debug-only: true
+        debug-only: false
         ascending: true
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         days-before-stale: 1
