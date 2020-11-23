@@ -27,7 +27,8 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/stale@v3.0.14
+    #- uses: actions/stale@v3.0.14
+    - uses: william76/stale@testing-20201123
       with:
         debug-only: false
         ascending: true
