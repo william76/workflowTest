@@ -9,7 +9,7 @@
 #done
 
 delay_min=60
-delay_max=3600
+delay_max=1800
 
 for (( i=1; i<= 100; ++i)); do
     delay_secs=$(( $RANDOM % (${delay_max} - ${delay_min}) + ${delay_min}+1 ))
