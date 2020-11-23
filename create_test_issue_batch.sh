@@ -22,9 +22,9 @@ while [ $(( $(date +%s) - ${time_limit:?} )) -lt $START ]; do
     thetime=$(date +"%H:%M:%S")
 
     echo "gh issue create --title='Test Issue ${thedate:?} @ ${thetime:?}' --body='Test Issue'"
-    #gh issue create \
-    #    --title="Test Issue ${thedate:?} @ ${thetime:?}" \
-    #    --body="This issue is for testing the auto-closer tool"
+    gh issue create \
+        --title="Test Issue ${thedate:?} @ ${thetime:?}" \
+        --body="This issue is for testing the auto-closer tool"
 
     # delay
     echo "sleep $delay_secs"
