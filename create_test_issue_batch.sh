@@ -8,11 +8,13 @@
 #    #gh issue create --title="Test Issue ${thedate:?} ${i:?}" --body="Test Issue"
 #done
 
-delay_min=86
-delay_max=864
+# use 86..864 to generate between 100-1000 issues per day.
+delay_min=10
+delay_max=60
 
 # 86400 : seconds in 1 day
-time_limit=86400
+#  3600 : seconds in 1 hour
+time_limit=3600
 
 START=`date +%s`
 while [ $(( $(date +%s) - ${time_limit:?} )) -lt $START ]; do
