@@ -12,6 +12,8 @@
 delay_min=10
 delay_max=60
 
+progress_tick_delay=1
+
 # 86400 : seconds in 1 day
 #  3600 : seconds in 1 hour
 time_limit=3600
@@ -32,7 +34,7 @@ while [ $(( $(date +%s) - ${time_limit:?} )) -lt $START ]; do
     echo "sleep $delay_secs"
     START_DELAY=`date +%s`
     while [ $(( $(date +%s) - ${delay_secs:?} )) -lt $START_DELAY ]; do
-        sleep 10
+        sleep ${progress_tick_delay:?}
         printf "."
     done
     printf "\n"
