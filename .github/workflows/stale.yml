@@ -30,7 +30,7 @@ jobs:
     - uses: actions/stale@v3.0.14
     #- uses: william76/stale@testing-20201123
       with:
-        debug-only: false
+        debug-only: true
         ascending: true
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         days-before-stale: 1
