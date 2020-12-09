@@ -42,7 +42,7 @@ jobs:
         exempt-issue-labels: 'DO_NOT_AUTOCLOSE'
         #exempt-pr-labels: ''
         remove-stale-when-updated: true
-        operations-per-run: 250
+        operations-per-run: 150
         stale-issue-message: >
           This issue has had no activity for **365** days and is marked for
           closure. It will be closed after an additional **30** days of inactivity.
