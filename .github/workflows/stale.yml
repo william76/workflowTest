@@ -36,6 +36,7 @@ jobs:
         days-before-stale: 1
         days-before-close: 1
         stale-issue-label: 'MARKED_FOR_CLOSURE'
+        close-issue-label: 'CLOSED_DUE_TO_INACTIVITY' 
         stale-pr-label: 'MARKED_FOR_CLOSURE'
         close-pr-label: 'CLOSED_DUE_TO_INACTIVITY' 
         exempt-issue-labels: 'DO_NOT_AUTOCLOSE'
