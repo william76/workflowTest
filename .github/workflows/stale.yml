@@ -34,7 +34,7 @@ jobs:
         ascending: true
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         days-before-stale: 1
-        days-before-close: 1
+        days-before-close: 5
         stale-issue-label: 'MARKED_FOR_CLOSURE'
         close-issue-label: 'CLOSED_DUE_TO_INACTIVITY' 
         stale-pr-label: 'MARKED_FOR_CLOSURE'
